@@ -30,10 +30,16 @@ const Imc = () => {
   
     const calculate = (e: React.FormEvent) => {
       e.preventDefault();
-  
+      
       const pesoN = Number(peso);
       const alturaN = Number(altura);
-  
+      
+      if(isNaN(pesoN) || isNaN(alturaN) || pesoN === 0 || alturaN === 0){
+        setResultadoImc(null)
+        setClassificacao(null)
+        return
+      }
+
       const imc = (pesoN / (alturaN * alturaN)).toFixed(2);
       setResultadoImc(Number(imc));
     };
