@@ -55,7 +55,7 @@ const Imc = () => {
 
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
-      <h1 className="text-4xl mb-6 text-center">Calculadora de IMC</h1>
+      <h1 className="text-4xl mb-6 text-center text-white">Calculadora de IMC</h1>
       <form className="border-solid border-2 border-rosa h-[35rem] p-6 rounded-md">
         <div className="flex justify-around"></div>
         <div className="flex flex-col h-2/4 justify-around">
@@ -95,24 +95,24 @@ const Imc = () => {
         <div className="flex justify-around">
           <button
             onClick={calculate}
-            className="border-solid border-2 border-rosa rounded-md p-1 mt-4  w-24"
+            className="border-solid text-white border-2 border-rosa rounded-md p-1 mt-4  w-24"
           >
             Calcular
           </button>
           <button
             onClick={resetar}
-            className="border-solid border-2 border-dourado rounded-md w-24 p-1 mt-4"
+            className="border-solid text-white border-2 border-dourado rounded-md w-24 p-1 mt-4"
           >
             Resetar
           </button>
         </div>
         {resultadoImc && (
-          <div className="mt-6 flex justify-center items-center h-20 text-3xl">
+          <div className="mt-6 flex justify-center items-center text-white h-20 text-3xl">
             Seu imc é: {resultadoImc}
           </div>
         )}
         {classificacao && (
-          <div className="flex justify-center h-1/4 text-3xl">
+          <div className="flex justify-center h-1/4 text-white text-3xl">
             {classificacao}
           </div>
         )}
