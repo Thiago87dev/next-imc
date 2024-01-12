@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -26,6 +22,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Tirando as setas dos input type number*/
 input[type=number]::-webkit-inner-spin-button { 
   -webkit-appearance: none;
   
@@ -35,4 +32,21 @@ input[type=number] {
  appearance: textfield;
 
 }
+
+/* Alterando somente nos placeholders dos input*/
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 14px;
+}
+
+
+
       
