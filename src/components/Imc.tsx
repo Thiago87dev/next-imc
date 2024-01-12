@@ -56,7 +56,7 @@ const Imc = () => {
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <h1 className="text-4xl mb-6 text-center text-white">Calculadora de IMC</h1>
-      <form className="border-solid border-2 border-rosa h-[35rem] p-6 rounded-md">
+      <form className="border-solid border-2 border-rosa h-[35rem] w-80 p-6">
         <div className="flex justify-around"></div>
         <div className="flex flex-col h-2/4 justify-around">
           <div className="flex flex-col">
